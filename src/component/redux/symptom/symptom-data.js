@@ -15,13 +15,12 @@ export const SYMPTOM_DATA = [
     title: "Difficulty Breathing : Sometimes",
   },
   {
-    imageUrl:
-      "https://image.shutterstock.com/image-vector/tired-weary-fatigue-melancholy-sad-260nw-774766537.jpg",
+    imageUrl: "https://miro.medium.com/max/529/1*s9ByhF-jJ1EIoXNU69eqGQ.png",
     title: "Tiredness : Sometimes",
   },
   {
     imageUrl:
-      "https://image.shutterstock.com/image-photo/teen-woman-headache-holding-her-260nw-177270461.jpg",
+      "https://pixabay.com/get/54e0d04b4e55aa14f1dc8460da293277113cd8ec5a5179_640.png",
     title: "Headache : Sometimes",
   },
   {
@@ -36,7 +35,7 @@ export const SYMPTOM_DATA = [
   },
   {
     imageUrl:
-      "https://image.shutterstock.com/image-photo/close-blonde-woman-sneezing-tissue-260nw-1358971841.jpg",
+      "https://image.freepik.com/free-vector/boys-girls-having-cold_1308-35424.jpg",
     title: "Sneezing : No",
   },
 ];

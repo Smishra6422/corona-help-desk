@@ -7,7 +7,7 @@ export const PRECAUTION_DATA = [
   },
   {
     imageUrl:
-      "https://image.shutterstock.com/image-vector/warning-sign-sticker-reminding-importance-260nw-1676812414.jpg",
+      "https://image.freepik.com/free-vector/social-distancing-concept_23-2148501908.jpg",
     title: "KEEP a Safe Distance !",
     description:
       "Maintain a safe distance from anyone who is coughing or sneezing.",

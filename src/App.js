@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <hr />
       <Switch>
         <Route exact path="/" component={Homepage} />
         <Route exact path="/symptom" component={SymptomCard} />

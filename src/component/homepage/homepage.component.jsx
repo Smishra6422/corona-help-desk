@@ -52,6 +52,7 @@ const Homepage = ({ fetchCountryDataStart, coronaData, isFetching }) => {
           </div>
         </form>
       </div>
+
       <div className="heading-container">
         <MDBTypography tag="h1" variant="h1" className="card-heading">
           {country}

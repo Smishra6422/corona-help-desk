@@ -64,7 +64,7 @@ const FooterPage = () => {
           <MDBContainer fluid>
             <a href="/" className="brand-name">
               {" "}
-              HelpDesk{" "}
+              Help-Desk{" "}
             </a>
           </MDBContainer>
         </div>

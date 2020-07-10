@@ -1,17 +1,25 @@
 .spinner-container {
-  height: 15rem;
-  .spinner {
-    position: absolute;
-    height: 3rem !important;
-    width: 3rem !important;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  height: 21rem;
+  width: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    .text {
-      margin-top: 3rem;
-      font-size: 2rem;
-      color: #fff;
-    }
+  .spinner-border {
+    height: 2.5rem !important;
+    width: 2.5rem !important;
+  }
+
+  & > p {
+    margin-top: 0.4rem;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+}
+
+@media (max-width: 47rem) {
+  .spinner-container {
+    height: 19rem;
   }
 }

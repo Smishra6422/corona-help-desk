@@ -8,12 +8,19 @@ import {
   NavItem,
   NavLink,
 } from "reactstrap";
-
-import { MDBIcon } from "mdbreact";
+import { withRouter } from "react-router-dom";
 
 import "./header.style.scss";
 
-const Header = (props) => {
+const currentTab = (history, path) => {
+  if (history.location.pathname === path) {
+    return { color: "#2ecc72" };
+  } else {
+    return { color: "#ffffff" };
+  }
+};
+
+const Header = ({ history }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => setIsOpen(!isOpen);
@@ -21,24 +28,38 @@ const Header = (props) => {
   return (
     <div>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="/">HelpDesk</NavbarBrand>
+        <NavbarBrand href="/">Help-Desk</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav style={{ marginLeft: "42%" }} navbar>
+          <hr />
+          <Nav navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
+              <NavLink style={currentTab(history, "/")} href="/">
+                Home
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/symptom">Symptom</NavLink>
+              <NavLink style={currentTab(history, "/symptom")} href="/symptom">
+                Symptom
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/precaution">Precaution</NavLink>
+              <NavLink
+                style={currentTab(history, "/precaution")}
+                href="/precaution"
+              >
+                Precaution
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/world">World Data</NavLink>
+              <NavLink style={currentTab(history, "/world")} href="/world">
+                World Data
+              </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/about">About Me</NavLink>
+              <NavLink style={currentTab(history, "/about")} href="/about">
+                About Me
+              </NavLink>
             </NavItem>
           </Nav>
         </Collapse>
@@ -47,4 +68,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);

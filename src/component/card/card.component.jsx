@@ -8,7 +8,6 @@ import {
   MDBCardText,
   MDBRow,
   MDBCol,
-  MDBIcon,
 } from "mdbreact";
 // import { connect } from "react-redux";
 
